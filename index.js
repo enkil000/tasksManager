@@ -23,6 +23,4 @@ app.get('/', (req, res) => {
 })
 // e2tuT31E5uOW8q7M
 // arrancar la app
-app.listen(port,host ,()=>{
-    console.log(`El servidor esta funcionando en el puerto ${port}`)
-})
+app.listen(process.env.PORT, '0.0.0.0');
