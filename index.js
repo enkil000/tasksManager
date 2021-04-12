@@ -10,7 +10,7 @@ app.use(cors())
 app.use(express.json({extended:true}))
 
 // puerto de la pp
-const port = process.env.port
+const port = process.env.port || 4000
 // importar rutas
 app.use('/api/usuarios', require('./routes/usuariosRouting'))
 app.use('/api/auth', require('./routes/authRouting'))
